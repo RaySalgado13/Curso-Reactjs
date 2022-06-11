@@ -10,7 +10,7 @@
 import heroes, { owners }  from '../data/heroes' //utilizar la extension .js es opcional
 
 
-console.log(heroes)
+//console.log(heroes)
 
 //Recordar para las arrow functions:
 /*
@@ -25,16 +25,16 @@ console.log(heroes)
     Son iguales
 */
 
-const getHeroesByID = (idHeroe) => {
+export const getHeroesByID = (idHeroe) => {
     return heroes.find( ( {id} ) => id === idHeroe )
 }
 
-console.log(getHeroesByID(2))
+//console.log(getHeroesByID(2))
 
 
 
-const getHeroesByOwner = (ownerHeroe) => (
+export const getHeroesByOwner = (ownerHeroe) => (
     heroes.filter( ( {owner} ) => owner === ownerHeroe )
 )
 
-console.log(getHeroesByOwner('Marvel'))
+//console.log(getHeroesByOwner('Marvel'))
